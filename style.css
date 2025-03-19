@@ -41,6 +41,10 @@ body {
     overflow-x: hidden;
 }
 
+.logo{
+    max-width: 41px;
+}
+
 /* Cabeçalho */
 .cabecalho {
     display: flex;
@@ -53,11 +57,12 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
-.logo {
+.logo-nome {
     font-size: 24px;
     font-weight: bold;
     color: #233348;
     flex: 1; /* Mantém o logo à esquerda */
+    margin-left: 10px;
 }
 
 .menu {
@@ -320,18 +325,17 @@ body {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     padding: 20px;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 20px 0;
     color: #FFFFFF;
 }
 
 .user-image {
-    width: 141px;
-    height: 141px;
-    border-radius: 50%;
+    width: 141px; 
+    height: 141px; 
+    border-radius: 50%; 
+    object-fit: cover; 
     margin-right: 20px;
-    object-fit: cover;
-    max-width: 141px;
 }
 
 .testemunho-content {
@@ -344,20 +348,26 @@ body {
     font-size: 22px;
     margin-right: 10px;
     margin-top: 20px; /* Ajuste para alinhar com a imagem */
+    text-align: left;
+}
+
+.testemunho-perfil{
+    margin-right: 50px;
 }
 
 .user-role {
     font-size: 18px;
     color: #FFFFFF;
     margin-left: 5px;
-    margin-top: 20px; /* Ajuste para alinhar com a imagem */
+    text-align: left;
 }
 
 .testemunho-text {
     font-size: 19px;
     max-width: 420px;
     margin-left: 20px;
-    margin-top: 20px; /* Ajuste para alinhar com a imagem */
+    margin-top: 20px;
+    text-align: left;
 }
 
 .testemunho-navigation {
